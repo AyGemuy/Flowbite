@@ -1,0 +1,30 @@
+languageCode:           "en"
+title:                  "FlowBite Tailwind CSS"
+baseURL:                "https://flowbite.com/docs/"
+# baseURL:                "http://localhost:1313/docs"
+enableInlineShortcodes: true
+
+params:
+  current_version: 1.3.2
+  authors: Themesberg
+  social_image_path: /docs/images/og-image.png
+
+markup:
+  goldmark:
+    renderer:
+      unsafe:           true
+  highlight:
+    noClasses:          false
+    style:              colorful
+  tableOfContents:
+    startLevel:         2
+    endLevel:           6
+
+buildDrafts:            true
+buildFuture:            true
+
+enableRobotsTXT:        true
+metaDataFormat:         "yaml"
+disableKinds:           ["404", "taxonomy", "taxonomyTerm", "RSS"]
+
+publishDir:             "_gh_pages"

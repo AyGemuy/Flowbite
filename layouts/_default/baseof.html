@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {{ partial "header" . }}
+</head>
+{{ block "body_override" . }}
+
+<body class="dark:bg-gray-900">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MGFH7LR" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  {{ end }}
+  {{ partial "skippy" . }}
+
+  {{ block "main" . }}
+  {{ end }}
+
+  {{ partial "footer" . }}
+  {{ partial "scripts" . }}
+
+  {{ block "footer" . }}
+  {{ end }}
+</body>
+
+</html>
